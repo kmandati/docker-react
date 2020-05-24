@@ -1,0 +1,9 @@
+version: '3'
+services:
+    web:
+        build: ".\ncontext:.\ndockerfile: Dockerfile.dev.File"
+        ports:
+            - '3003:3000'
+        volumes:
+            - /app/node_modules
+            - '.:/app'
